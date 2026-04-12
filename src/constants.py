@@ -1,0 +1,42 @@
+from enum import Enum
+
+
+class CardType(str,Enum):
+    ATTACK = "ATTACK"
+    DEFENSE = "DEFENSE"
+    FUNCTION = "FUNCTION"
+    LUCKEY = "LUCKEY"
+
+
+class CardFunction(str,Enum):
+    DAMAGE = "DAMAGE"
+    BLOCK = "BLOCK"
+    SHIELD = "SHIELD"
+    ENERGY = "ENERGY"
+    RANDOM_ENERGY = "RANDOM_ENERGY"
+    RANDOM_DAMAGE_ATTACK = "RANDOM_DAMAGE_ATTACK"
+    RANDOM_DAMAGE_DEFENSE = "RANDOM_DAMAGE_DEFENSE"
+    CHANGE_HEALTH = "CHANGE_HEALTH"
+    EXTRA_DAMAGE = "EXTRA_DAMAGE"
+    LUCKEY = "LUCKEY"
+    CHANGE_CARD = "CHANGE_CARD"
+    DAMAGE_REDUCTION = "DAMAGE_REDUCTION"
+
+
+class CardTarget(str,Enum):
+    ENEMY = "ENEMY"
+    SELF = "SELF"
+    ALL = "ALL"
+
+class State(str,Enum):
+    PLAYING = "PLAYING"
+    WON = "WON"
+    LOST = "LOST"
+
+
+class Turn(str,Enum):
+    START = "START"
+    PLAYERTURN1 = "PLAYERTURN1"
+    PLAYERTURN2 = "PLAYERTURN2"
+    ENEMYTURN = "ENEMYTURN"
+    ENDTURN = "ENDTURN"

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSpire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .btn-secondary {
+            background-color: #f44336;
+        }
+        .btn-secondary:hover {
+            background-color: #da190b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MiniSpire</h1>
+        <p>欢迎来到 MiniSpire 卡牌游戏！</p>
+        <button class="btn" id="start_game">开始游戏</button>
+    </div>
+</body>
+<script src="/static/start.js"></script>
+</html>
