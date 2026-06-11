@@ -1,5 +1,5 @@
 
-from MiniSpire.src.sql import UserPreference, SessionLocal, User
+from MiniSpire.src.sql import UserPreference, SessionLocal, User, Population
 
 
 def save_cards(user_id: str, cards: list):
@@ -51,3 +51,22 @@ def check_user_exists(username: str):
     user = session.query(User).filter(User.username == username).first()
     session.close()
     return user is not None
+
+def save_best_gene(gene: list,score: int):
+    session = SessionLocal()
+    population = Population(gene=gene,score=score)
+    session.add(population)
+    session.commit()
+    session.close()
+
+def load_best_gene():
+    session = SessionLocal()
+    gene = session.query(Population.gene).order_by(Population.id.desc()).first()
+    session.close()
+    return gene[0]
+
+def load_population(num : int =1):
+    session = SessionLocal()
+    population = session.query(Population).order_by(Population.id.desc()).limit(num).all()
+    session.close()
+    return population

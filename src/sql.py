@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, String, JSON
+from sqlalchemy import create_engine, Column, String, JSON, Integer
 from sqlalchemy.orm import declarative_base, sessionmaker
 from MiniSpire.src.config import game_config
 
@@ -15,5 +15,13 @@ class User(Base):
     __tablename__ = "users"
     username = Column(String(36),primary_key=True)
     password = Column(String(36))
+
+class Population(Base):
+    __tablename__ = "populations"
+    id = Column(Integer, primary_key=True)
+    gene = Column(JSON, nullable=False)
+    score = Column(Integer, default=0)
+
+
 Base.metadata.create_all(engine)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

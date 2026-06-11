@@ -40,3 +40,4 @@ class Turn(str,Enum):
     PLAYERTURN2 = "PLAYERTURN2"
     ENEMYTURN = "ENEMYTURN"
     ENDTURN = "ENDTURN"
+    AITURN = "AITURN"

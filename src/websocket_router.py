@@ -1,8 +1,12 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
 import MiniSpire.src.data as data_
+from MiniSpire.src import config
 
 router = APIRouter()
+@router.get("/getWebSocketUrl")
+async def get_websocket_url():
+    return {"websocket_url": config.game_config.WEBSOCKET_URL}
 @router.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()

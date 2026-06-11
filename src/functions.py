@@ -76,6 +76,7 @@ def function_damage(target: Targets, card: Card):
     if target.shield > 0 and card.value > target.block:
         target.shield -= 1
         target.block = 0
+        target.extra_damage = 0
         message = f"造成0伤害,{get_damage(card,target)}点伤害被抵御"
         return message
     damage = card.value - target.block

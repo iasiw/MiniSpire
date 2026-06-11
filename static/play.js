@@ -7,8 +7,20 @@ function getOrCreateUserId() {
     return userId;
 }
 
-function connectWebSocket() {
-    const websocket = new WebSocket("ws://qt12pm084999.vicp.fun:44064/ws?userId="+userId);
+async function connectWebSocket() {
+    const response = await fetch("/getWebSocketUrl", {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        cache: "no-cache",
+    });
+    if (!response.ok) {
+        throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+    const WEBSOCKET_URL = data.websocket_url;
+    const websocket = new WebSocket(WEBSOCKET_URL+"/ws?userId="+userId);
     websocket.onopen = function() {
         console.log("已连接");
     }

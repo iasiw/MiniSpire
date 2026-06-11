@@ -12,6 +12,7 @@ from MiniSpire.src.constants import Turn, CardType, State
 import MiniSpire.src.data as data_
 from MiniSpire.src.websocket_router import router
 
+game_config.AI_TRAINING =0
 app = FastAPI()
 app.include_router(router)
 
@@ -44,6 +45,7 @@ async def play():
 async def play(request: Request):
     data = await request.json()
     user_id = data["user_id"]
+    print(f"传回的user_id为{user_id}")
     card_id = int(data["card_id"])
     message = ""
     if user_id == data_.game[data_.player[user_id].room_num].player.id and data_.game[data_.player[user_id].room_num].turn == Turn.PLAYERTURN1:
@@ -107,6 +109,9 @@ async def save(request: Request):
         if data_.user_num % 2 == 1:
             data_.game[data_.room_num].player = data_.player[user_id]
             data_.player[user_id].enemy = Targets()
+            for i in range(12):
+                data_.player[user_id].enemy.cards.append(card_library[i+1])
+            data_.player[user_id].enemy.get_hand_card()
             data_.game[data_.room_num].enemy = data_.player[user_id].enemy
         if data_.user_num % 2 == 0:
             data_.game[data_.room_num].enemy = data_.player[user_id]
