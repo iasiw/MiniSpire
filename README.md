@@ -40,10 +40,10 @@ MiniSpire/
    ```bash
    python main.py
    ```
-   服务启动后，WebSocket 服务将在 `ws://localhost:8000`（或其他指定端口）监听。
+   服务启动后，WebSocket 服务将在 `ws://localhost:8000`（或`config.py`中配置地址）监听。
 
 4. **访问Web界面**
-   打开浏览器访问 `http://localhost:8000`（或 `main.py` 中配置的地址），即可开始交互。
+   打开浏览器访问 `http://localhost:8000`（或 `main.py` 中配置地址），即可开始交互。
 
 5. **测试训练功能**
    ```bash
