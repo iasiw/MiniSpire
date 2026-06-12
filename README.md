@@ -37,16 +37,16 @@ MiniSpire/
    cd MiniSpire
    ```
 
-2. **运行后端服务**
+3. **运行后端服务**
    ```bash   ”“bash   “bash”;“bash```bash   ”“bash   “bash”;“bash
    python main.py
    ```
    服务启动后，WebSocket 服务将在 `ws://localhost:8000`（或其他指定端口）监听。
 
-3. **访问Web界面**
+4. **访问Web界面**
    打开浏览器访问 `http://localhost:8000`（或 `main.py` 中配置的地址），即可开始交互。
 
-4. **测试训练功能**
+5. **测试训练功能**
    ```bash   ”“bash   “bash”;“bash```bash   ”“bash   “bash”;“bash
    python test_training.py
    ```
@@ -56,8 +56,8 @@ MiniSpire/
 - **`main.py`**：启动 WebSocket 服务器，处理连接、消息收发及业务逻辑。
 - **`test_training.py`**：包含简单的模型训练或推理测试流程，可快速验证功能。
 - **`text.py`**：提供文本预处理或分析等辅助函数。
-- **`templates/`**：前端界面 HTML，与后端通过 WebSocket 通信。- **`templates/`**: Frontend HTML interfaces that communicate with the backend via WebSocket.
-
+- **`templates/`**：前端界面 HTML，与后端通过 WebSocket 通信。
+  
 ## 🤝 贡献
 
 欢迎提出问题、建议或贡献代码。请遵循以下步骤：
@@ -74,5 +74,7 @@ GitHub：[@iasiw](https://github.com/iasiw)
 
 ---
 
-**注意**：此项目仍在早期开发阶段，部分功能可能变更或存在 bug。欢迎提交 Issue 反馈问题。
+**注意**：
+```
+此项目仍在早期开发阶段，部分功能可能变更或存在 bug。欢迎提交 Issue 反馈问题。
 ```
