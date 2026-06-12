@@ -134,7 +134,7 @@ python test_training.py
 - **`static/*.js`**：对应页面的交互逻辑与WebSocket通信
 
 ### 数据库
-- **`data.db`**：SQLite数据库，存储玩家账号、卡牌收藏、AI参数、对战历史
+- **`data.db`**：SQLite数据库，存储玩家账号、卡牌收藏、AI参数
 
 ## 🔧 配置说明
 
