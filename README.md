@@ -1,7 +1,6 @@
 # MiniSpire
 
-[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)[![Python 版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License   许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE   许可证)[![许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE   许可证)[![License   许可证](https://img.shields.io/badge/license-MIT-green)](LICENSE   许可证)
+[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)[![License   许可证](https://img.shields.io/badge/license-MIT-green)]
 
 一个轻量级的WebSocket通信与模型训练演示工具。
 
@@ -14,7 +13,7 @@
 
 ## 📦 项目结构
 
-MiniSpire/
+MiniSpire/  
 ├── main.py              # 后端主程序入口  
 ├── test_training.py     # 训练功能测试脚本  
 ├── text.py              # 文本处理相关模块  
