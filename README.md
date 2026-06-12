@@ -9,7 +9,7 @@
 
 - 🚀 **WebSocket实时通信**：支持浏览器与服务器之间的双向实时通讯
 - 🧠 **模型训练演示**：包含基础的训练流程测试脚本
-- 🌐 **Web交互界面**：基于HTML/JavaScript构建的简洁前端面板- 🌐 **Web Interface   Web界面**: A clean front-end panel built with HTML/JavaScript- 🌐 **Web Interface   Web界面**: A clean front-end panel built with HTML/JavaScript
+- 🌐 **Web交互界面**：基于HTML/JavaScript构建的简洁前端面板
 - 🐍 **纯Python后端**：使用Python实现核心逻辑，轻量易扩展
 
 ## 📦 项目结构
@@ -32,13 +32,13 @@ MiniSpire/
 ### 安装与运行
 
 1. **克隆仓库**
-   ```bash   ”“bash   “bash”;“bash```bash   ”“bash   “bash”;“bash
+   ```bash
    git clone https://github.com/iasiw/MiniSpire.git
    cd MiniSpire
    ```
 
 3. **运行后端服务**
-   ```bash   ”“bash   “bash”;“bash```bash   ”“bash   “bash”;“bash
+   ```bash
    python main.py
    ```
    服务启动后，WebSocket 服务将在 `ws://localhost:8000`（或其他指定端口）监听。
@@ -47,7 +47,7 @@ MiniSpire/
    打开浏览器访问 `http://localhost:8000`（或 `main.py` 中配置的地址），即可开始交互。
 
 5. **测试训练功能**
-   ```bash   ”“bash   “bash”;“bash```bash   ”“bash   “bash”;“bash
+   ```bash
    python test_training.py
    ```
 
