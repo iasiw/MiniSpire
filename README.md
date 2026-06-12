@@ -94,7 +94,7 @@ MiniSpire/
    ```bash
    python main.py
    ```
-   服务启动后，WebSocket服务将在配置的地址监听（默认 `ws://localhost:8000`）。
+   服务启动后，WebSocket服务将在配置的地址监听（默认 `ws://localhost:8000`可在`src/config.py中修改`）。
 
 5. **开始游戏**
    - 打开浏览器访问 `http://localhost:8000`
@@ -170,8 +170,7 @@ GitHub：[@iasiw](https://github.com/iasiw)
 
 ---
 
-**提示**：
+**注**：
 - 首次运行请确保已完成AI训练（`python src/genetic_algorithm.py`），否则PVE模式无法正常工作
 - `data.db` 会在训练或首次登录时自动生成，无需手动创建
 - 此项目仍在积极开发中，部分功能可能变更。欢迎提交 Issue 反馈问题！
-```
