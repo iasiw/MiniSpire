@@ -1,6 +1,6 @@
 # MiniSpire
 
-[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)[![License   许可证](https://img.shields.io/badge/license-MIT-green)]
+[![Python Version   Python版本](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)![License   许可证](https://img.shields.io/badge/license-MIT-green)
 
 一个轻量级的WebSocket通信与模型训练演示工具。
 
